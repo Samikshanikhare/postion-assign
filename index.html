@@ -9,7 +9,7 @@
             width: 1700px;
             background-color: rgb(161, 78, 43);
             display: block;
-            position:relative;
+            position:static;
             padding: 20px;
          }
      .one{
@@ -25,6 +25,8 @@
             width: 1700px;
             background-color: beige;
             position: sticky;
+            top: 0px;
+            z-index: 3;
          }
     .two{
             position: relative;
@@ -39,7 +41,17 @@
             background-color: rgb(175, 119, 96);
             display: inline-block;
             margin-left: 5px;
+            position: relative;
          }
+    .btn1{
+        background-color: tomato;
+        color: white;
+        font-size: 30px;
+        border-radius: 20px 0px 20px 0px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
       .color{
             color: white;
             font-size: 50px;
@@ -52,10 +64,16 @@
             width: 100px;
             border:10px 10px brown;
             border-radius: 20px;
-            position: sticky;
+            position:fixed;
+            top: 0px;
 
             
          }
+    .name{
+        position: relative;
+        left: 40px;
+        top: 20px;
+    }
         
 </style>
 <body>
@@ -68,20 +86,31 @@
     </div>
     <hr>
     <div class="coffee">
-        <b class="color">coffee</b>
+        <b class="color">coffee</b><br>
+        <img src="coffee.jpg" height="250px" width="350 px" class="name">
+
     </div>
     <div class="coffee">
-        <b class="color">Pizza</b>
+        <b class="color">Pizza</b><br>
+        <img src="pizza.jpg" height="250px" width="350 px" class="name">
     </div>
     <div class="coffee">
-        <b class="color">Pasta</b>
+        <b class="color">Pasta</b><br>
+        <img src="pasta.avif" height="250px" width="350 px" class="name">
     </div><br><br>
     <button class="btn">Call Now</button>
     <div class="coffee">
         <b class="color">Moctails</b>
+        <img src="moctails.jpg" height="250px" width="350 px" class="name">
     </div>
     <div class="coffee">
         <b class="color">Dessert</b>
+        <img src="desserts.jpg" height="250px" width="350 px" class="name">
+    </div>
+    <div class="coffee">
+        <b class="color">Icecream</b>
+        <img src="icecream.jpg" height="250px" width="350 px" class="name">
+        <button class="btn1">Offer</button>
     </div>
     
 </body>
